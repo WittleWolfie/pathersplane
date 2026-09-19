@@ -1,0 +1,172 @@
+[spoiler="[b]⚙️ Attributes, Proficiency, and Equipment[/b]"]
+
+[linebreak]
+
+[2column]
+  [col]
+    [table="ht]
+      Armor | AC | Proficiency | Dex Cap | Strength Requirement | Check Penalty | Potency | Resilience
+      [_=] | [_armor=] | [_armorProf=0/4] | [_dexCap=] | [_armorStr=] | [_acp=] | [_pot=] | [_res=]
+    [/table]
+    [table="ht]
+      Weapon | Attack Bonus | Damage | Range | Type | Traits
+      1: [_wep1=] | +[_atk1=] | [_dmg1=] | [_range1=] | [_type1=] | [_trait1=]
+      2: [_wep2=] | +[_atk2=] | [_dmg2=] | [_range2=] | [_type2=] | [_trait2=]
+      3: [_wep3=] | +[_atk3=] | [_dmg3=] | [_range3=] | [_type3=] | [_trait3=]
+      4: [_wep4=] | +[_atk4=] | [_dmg4=] | [_range4=] | [_type4=] | [_trait4=]
+    [/table]
+  [/col]
+  [col]
+    [table="ht compact]
+      Shield| AC | Hardness | HP
+      [_=] | [_shieldBonus=] | [_hardness=] | [_shieldHp=]
+    [/table]
+  [/col]
+[/2column]
+
+[3column]
+  [col]
+    [table="ht rolls compact"]
+      | Modifier | Boost | Roll
+      [b]Level[/b] | [_lvl=1]
+      [b]Strength[/b] | [_str=] | [_=0/1] | 1d20[_$=+str]
+      [b]Dexterity[/b] | [_dex=] | [_=0/1] | 1d20[_$=+dex]
+      [b]Constitution[/b] | [_con=] | [_=0/1] | 1d20[_$=+con]
+      [b]Intelligence[/b] | [_int=] | [_=0/1] | 1d20[_$=+int]
+      [b]Wisdom[/b] | [_wis=] | [_=0/1] | 1d20[_$=+wis]
+      [b]Charisma[/b] | [_cha=] | [_=0/1] | 1d20[_$=+cha]
+    [/table]
+  [/col]
+  [col]
+    [table="ht rolls compact"]
+      | Proficiency| Roll
+      [b]Perception[/b] | [_a=0/4] | 1d20[_per$=+wis+(min(a,1)*lvl)+(a*2)]
+      [b]Fortitude[/b] | [_a=0/4] | 1d20[_fort$=+con+(min(a,1)*lvl)+(a*2)+res]
+      [b]Reflex[/b] | [_a=0/4] | 1d20[_ref$=+dex+(min(a,1)*lvl)+(a*2)+res]
+      [b]Will[/b] | [_a=0/4] | 1d20[_will$=+wis+(min(a,1)*lvl)+(a*2)+res]
+    [/table]
+  [/col]
+  [col]
+    [table="ht compact"]
+      | Proficiency
+      [b]Armor[/b] | |
+      Unarmored | [_a=0/4]
+      Light | [_a=0/4]
+      Medium | [_a=0/4]
+      Heavy | [_a=0/4]
+      [b]Weapons[/b] | |
+      Unarmed | [_a=0/4]
+      Simple | [_a=0/4]
+      Martial | [_a=0/4]
+      Advanced: [_=] | [_a=0/4]
+    [/table]
+  [/col]
+[/3column]
+[/spoiler]
+
+[f=centre h1][_=Name][/f]
+[table]
+  [b]Ancestry:[/b] [_=] | [b]Background:[/b] [_=] | [b]Class:[/b] [_=] | [b]Deity:[/b] [_=]
+[/table]
+
+[f=h2]Status[/f]
+[table]
+  [b]Hit Points:[/b] [_=] / [_=] | [b]Speed:[/b] [_=25] | [b]Armor Class:[/b] [_ac$=10+min(dex,dexCap)+armor+(min(armorProf,1)*lvl)+(armorProf*2)+pot] / [_$=ac+shieldBonus]
+  [b]Exploration Activity:[/b] [_=] | [b]Hero Points:[/b] [_=1/3]
+[/table]
+
+[table="ht zebra"]
+  Condition | Value | Effect
+  [_=]| [_=] | [_=]
+  [_=]| [_=] | [_=]
+  [_=]| [_=] | [_=]
+  [_=]| [_=] | [_=]
+  [_=]| [_=] | [_=]
+[/table]
+
+[f=h2]Actions[/f]
+[table="ht rolls zebra"]
+  Action | Modifiers | Roll 
+  Initiative | [_initMod=] | 1d20[_$=+per+initMod]
+  Perception | [_perMod=] | 1d20[_$=+per+perMod]
+  Fort Save | [_fortMod=] | 1d20[_$=+fort+fortMod]
+  Reflex Save | [_refMod=] | 1d20[_$=+ref+refMod]
+  Will Save | [_willMod=] | 1d20[_$=+will+willMod]
+[/table]
+[table="ht rolls zebra"]
+  Weapon | Attack | Damage | Range | Type | Traits | Notes
+  [_$=wep1] | 1d20[_$=+atk1] | [_$=dmg1] | [_$=range1] | [_$=type1] | [_$=trait1] | [_=]
+  [_$=wep2] | 1d20[_$=+atk2] | [_$=dmg2] | [_$=range2] | [_$=type2] | [_$=trait2] | [_=]
+  [_$=wep3] | 1d20[_$=+atk3] | [_$=dmg3] | [_$=range3] | [_$=type3] | [_$=trait3] | [_=]
+  [_$=wep4] | 1d20[_$=+atk4] | [_$=dmg4] | [_$=range4] | [_$=type4] | [_$=trait4] | [_=]
+[/table]
+
+[f=h2]Skills[/f]
+[2column]
+  [col]
+    [table="ht rolls"]
+      Strength | Proficiency | Roll
+      Athletics | [_a=0/4] | 1d20[_$=+str+(min(a,1)*lvl)+(a*2)-acp*min(1,max(0,armorStr-str))]
+    [/table]
+    [table="ht rolls"]
+      Dexterity | Proficiency | Roll
+      Acrobatics | [_a=0/4] | 1d20[_$=+dex+(min(a,1)*lvl)+(a*2)-acp*min(1,max(0,armorStr-str))]
+      Stealth | [_a=0/4] | 1d20[_$=+dex+(min(a,1)*lvl)+(a*2)-acp*min(1,max(0,armorStr-str))]
+      Thievery | [_a=0/4] | 1d20[_$=+dex+(min(a,1)*lvl)+(a*2)-acp*min(1,max(0,armorStr-str))]
+    [/table]
+    [table="ht rolls"]
+      Wisdom | Proficiency | Roll
+      Medicine | [_a=0/4] | 1d20[_$=+wis+(min(a,1)*lvl)+(a*2)]
+      Nature | [_a=0/4] | 1d20[_$=+wis+(min(a,1)*lvl)+(a*2)]
+      Religion | [_a=0/4] | 1d20[_$=+wis+(min(a,1)*lvl)+(a*2)]
+      Survival | [_a=0/4] | 1d20[_$=+wis+(min(a,1)*lvl)+(a*2)]
+    [/table]
+  [/col]
+  [col]
+    [table="ht rolls"]
+      Intelligence | Proficiency | Roll
+      Arcana | [_a=0/4] | 1d20[_$=+int+(min(a,1)*lvl)+(a*2)]
+      Crafting | [_a=0/4] | 1d20[_$=+int+(min(a,1)*lvl)+(a*2)]
+      Lore: [_=] | [_a=0/4] | 1d20[_$=+int+(min(a,1)*lvl)+(a*2)]
+      Lore: [_=] | [_a=0/4] | 1d20[_$=+int+(min(a,1)*lvl)+(a*2)]
+      Occultism | [_a=0/4] | 1d20[_$=+int+(min(a,1)*lvl)+(a*2)]
+      Society | [_a=0/4] | 1d20[_$=+int+(min(a,1)*lvl)+(a*2)]
+    [/table]
+    [table="ht rolls"]
+      Charisma | Proficiency | Roll
+      Deception | [_a=0/4] | 1d20[_$=+cha+(min(a,1)*lvl)+(a*2)]
+      Diplomacy | [_a=0/4] | 1d20[_$=+cha+(min(a,1)*lvl)+(a*2)]
+      Intimidation | [_a=0/4] | 1d20[_$=+cha+(min(a,1)*lvl)+(a*2)]
+      Performance | [_a=0/4] | 1d20[_$=+cha+(min(a,1)*lvl)+(a*2)]
+    [/table]
+  [/col]
+[/2column]
+
+[abilities=Special Actions]
+# Example
+Put special actions that you can take here, like You're Next.
+[/abilities]
+
+[abilities=Equipment]
+[b]Cash:[/b] [_=]
+
+# Backpack
+A backpack holds up to 4 Bulk of items, and the first 2 Bulk of these items don't count against your Bulk limits. If you're carrying or stowing the pack rather than wearing it on your back, its Bulk is light instead of negligible.
+[/abilities]
+
+[abilities=Features and Feats]
+# Example
+An example feature or feat.
+[/abilities]
+
+[f=h2]Spells[/f]
+
+[abilities=Cantrips]
+# Example
+An example cantrip.
+[/abilities]
+
+[abilities=1st Level]
+# Example
+An example cantrip.
+[/abilities]
